@@ -1,5 +1,7 @@
+import fs from 'fs';
 const create = async () => {
-    // Write your code here 
+    fs.writeFile('src/fs/files/fresh.txt', 'I am fresh and young', { flag: 'ax' }, (err) => {
+        if (err) throw ('FS operation failed');
+    });
 };
-
 await create();
