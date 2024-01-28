@@ -1,6 +1,6 @@
 import fs from 'fs';
 const list = async () => {
-    fs.readdir('src/fs/files/', (err, files) => { 
+    fs.readdir('files/', (err, files) => { 
         if (err) {
             throw ('FS operation failed'); 
         }
