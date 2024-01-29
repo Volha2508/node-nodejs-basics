@@ -18,6 +18,7 @@
     "fs:rename": "cd src/fs && node rename.js",
     "hash": "node src/hash/calcHash.js",
     "modules": "node src/modules/esm.mjs",
+    "modules:export:test": "node src/modules/asm.js",
     "streams:read": "node src/streams/read.js",
     "streams:transform": "node src/streams/transform.js",
     "streams:write": "node src/streams/write.js",
