@@ -1,4 +1,10 @@
+import { env } from 'node:process';
 const parseEnv = () => {
-    console.log(process.env);
+    const keys = Object.keys(env);
+    keys.forEach((key) => {
+        if( key.startsWith('RSS_') ) {
+            console.log( key,'=',env[key] );
+        }
+    });
 };
 parseEnv();
